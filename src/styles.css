@@ -28,8 +28,8 @@
     background-color: white;
     color: black;
     text-align: center;
-    margin: 0rem 2.5rem;
-    width: 85%;
+    margin: 0rem 3rem;
+    /* width: 85%; */
 }
 
 .content a {
@@ -81,5 +81,37 @@
     border: 4px solid #000000;
     border-radius: 16px;
     z-index: -1;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+@media(max-width:700px){
+    .content {
+        width: 80%;
+    }
+
+    .content a, .content .ca {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .content .ca{
+        margin: 0 auto;
+    }
 }
   
