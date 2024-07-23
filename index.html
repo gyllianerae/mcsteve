@@ -37,6 +37,16 @@
             // document.removeEventListener('click', unmuteVideo);
         }
 
+        // Function to play the video
+        function playVideo() {
+            if (video.paused) {
+                video.play();
+            }
+        }
+
+        // Play the video automatically when the page loads
+        window.addEventListener('load', playVideo);
+
         document.addEventListener('click', unmuteVideo);
     </script>
 </body>
