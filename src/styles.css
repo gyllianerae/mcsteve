@@ -4,7 +4,6 @@
     font-family: "Press Start 2P", system-ui;
 }
 
-/* Style the video: 100% width and height to cover the entire window */
 #myVideo {
     position: fixed;
     right: 0;
@@ -13,13 +12,11 @@
     min-height: 100%;
 }
   
-  /* Add some content at the bottom of the video/page */
   .content {
     position: fixed;
     top: 50%;
     right: 8%;
     transform: translateY(-50%);
-    /* background: rgba(0, 0, 0, 0.5); */
     color: #f1f1f1;
     padding: 1rem; 
 }
@@ -27,9 +24,13 @@
 .content .ca {
     background-color: white;
     color: black;
+    padding: 1.5rem 2rem;
+    display: block;
+    border-radius: 5px;
+    margin: 3rem;
     text-align: center;
-    margin: 0rem 3rem;
-    /* width: 85%; */
+    border: 1px solid black;
+    width: 90%;
 }
 
 .content a {
@@ -43,6 +44,7 @@
     margin: 3rem;
     text-align: center;
     border: 1px solid black;
+    width: 90%;
 }
 
 .content a:hover {
@@ -108,10 +110,7 @@
     .content a, .content .ca {
         font-size: 1rem;
         padding: 1rem;
-    }
-
-    .content .ca{
-        margin: 0 auto;
+        margin: 2rem auto;
     }
 }
   
